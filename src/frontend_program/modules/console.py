@@ -39,3 +39,12 @@ def begin():
     while True:
         command = prompt()
         interpret_command(command)
+   
+#some code for letters
+def drawLetter(l, x, y, scale):
+    if (l == 'Z'):
+        p.draw_line(x+scale*0, y+scale*21, x+scale*21, y+scale*21)
+        p.draw_segment(x-scale*21, y-scale*21)
+         p.draw_segment(x+scale*21, y+scale*0)
+
+        return   
